@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_fonts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:tint="@color/color_white"
+        android:layout_alignParentBottom="true"
+        android:src="@android:drawable/ic_input_add"
+        app:fabSize="normal"
+        app:rippleColor="@color/color_white" />
+
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fabMic"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:src="@drawable/ic_menu_camera"-->
+<!--        android:tint="@color/color_white"-->
+<!--        app:backgroundTint="@color/colorPrimaryDark"-->
+<!--        app:fabSize="mini"-->
+<!--        app:rippleColor="@color/color_white" />-->
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fabCall"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:src="@drawable/ic_menu_gallery"-->
+<!--        android:tint="@color/color_white"-->
+<!--        app:backgroundTint="@color/colorPrimaryDark"-->
+<!--        app:fabSize="mini"-->
+<!--        app:rippleColor="@color/color_white" />-->
+
+    <LinearLayout
+        android:id="@+id/fab_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fab_fonts"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp">
+
+        <Button
+            android:id="@+id/download_template"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/download_template"
+            android:background="@color/color_white"
+            android:layout_marginTop="0dp" />
+
+        <Button
+            android:id="@+id/draw_here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/draw_here"
+            android:background="@color/color_white"
+            android:layout_marginTop="0dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

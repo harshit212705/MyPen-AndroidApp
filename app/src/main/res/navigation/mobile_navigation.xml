@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="application.example.mypen.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_generate_new_font"
+        android:name="application.example.mypen.ui.generate_new_font.GenerateNewFontFragment"
+        android:label="@string/menu_generate_new_font"
+        tools:layout="@layout/fragment_generate_new_font" />
+
+    <fragment
+        android:id="@+id/nav_my_custom_fonts"
+        android:name="application.example.mypen.ui.my_custom_fonts.MyCustomFontsFragment"
+        android:label="@string/menu_my_custom_fonts"
+        tools:layout="@layout/fragment_my_custom_fonts" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="application.example.mypen.ui.tools.ToolsFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="application.example.mypen.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="application.example.mypen.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+</navigation>

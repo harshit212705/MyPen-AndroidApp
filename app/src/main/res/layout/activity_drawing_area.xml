@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/warningtextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/draw_character_note"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+
+    <ImageView
+        android:id="@+id/selectedImage"
+        android:layout_width="250dp"
+        android:layout_height="325dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/image"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/warningtextView"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_check_box_green_24dp"
+        android:background="@drawable/draw_character_image_design"
+        android:padding="1dp" />
+
+
+<!--    <application.example.mypen.DrawableImageView android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/warningtextView"-->
+<!--        android:src="@drawable/ic_check_box_green_24dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="@drawable/draw_character_image_design"-->
+<!--        android:padding="1dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:id="@+id/selectedImage">-->
+<!--    </application.example.mypen.DrawableImageView>-->
+
+
+    <RelativeLayout
+        android:id="@+id/optionslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectedImage" >
+
+
+        <Button
+            android:id="@+id/dialogButtonDismiss"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="0dp"
+            android:background="@drawable/cross_black"
+            style="@style/Widget.AppCompat.Button.Colored"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+
+        <Button
+            android:id="@+id/dialogButtonUndo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="2dp"
+            android:layout_toRightOf="@+id/dialogButtonDismiss"
+            android:background="@drawable/undo"
+            style="@style/Widget.AppCompat.Button.Colored"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+
+        <Button
+            android:id="@+id/dialogButtonRedo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="2dp"
+            android:layout_toLeftOf="@+id/dialogImageClear"
+            android:background="@drawable/redo"
+            style="@style/Widget.AppCompat.Button.Colored"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <ImageView
+            android:id="@+id/dialogImageClear"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@+id/dialogButtonOk"
+            android:layout_marginEnd="2dp"
+            android:src="@drawable/clear_black"
+            android:padding="13dp"/>
+
+
+
+        <Button
+            android:id="@+id/dialogButtonOk"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/tick_black"
+            style="@style/Widget.AppCompat.Button.Colored"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

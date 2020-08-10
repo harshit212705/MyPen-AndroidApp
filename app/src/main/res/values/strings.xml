@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">My Pen</string>
+    <string name="new_font">New Font</string>
+    <string name="draw_here">Draw Here</string>
+    <string name="download_template">Download Template</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_generate_new_font">Generate New Font</string>
+    <string name="menu_my_custom_fonts">My Custom Fonts</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="documents">Documents</string>
+    <string name="fonts">Fonts</string>
+    <string name="image">Image</string>
+    <string name="draw_character_note">Draw character over the watermark only</string>
+    <string name="save_template">Save Template</string>
+    <string name="generate_font">Generate Font</string>
+    <string name="template_name">Template Name</string>
+    <string name="save">Save</string>
+    <string name="save_as">Save As</string>
+    <string name="font_name">Font Name</string>
+    <string name="generate_document">Generate Document</string>
+    <string name="document_name">Document Name</string>
+    <string name="upload_file">Upload Text File</string>
+    <string name="select_font">Select Font</string>
+    <string name="font_size">Font Size</string>
+    <string name="font_ink_color">Font Ink Color</string>
+    <string name="paper_lines">Paper Lines</string>
+    <string name="paper_margin">Paper Margin</string>
+
+</resources>
